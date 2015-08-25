@@ -50,3 +50,4 @@ gem 'spring',        group: :development
 
 ruby "2.2.0"
 gem 'puma'
+gem 'rails_12factor'

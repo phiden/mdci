@@ -960,3 +960,73 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-25 13:27:22
 
 
 Started GET "/assets/thinkful.png" for 127.0.0.1 at 2015-08-25 13:27:22 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-25 13:52:13 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListingsController#index as HTML
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "listings"
+  Rendered listings/_list.html.erb (8.7ms)
+  Rendered listings/index.html.erb within layouts/application (16.4ms)
+  [1m[36mCategory Load (2.3ms)[0m  [1mSELECT "categories".* FROM "categories"   ORDER BY name ASC[0m
+Completed 200 OK in 299ms (Views: 267.6ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-25 13:52:13 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:13 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:13 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:13 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:13 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:13 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:13 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:13 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:13 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:13 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:13 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:14 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:14 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:14 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:14 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:14 -0700
+
+
+Started GET "/assets/thinkful.png" for 127.0.0.1 at 2015-08-25 13:52:14 -0700
