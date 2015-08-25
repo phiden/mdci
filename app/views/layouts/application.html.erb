@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	
   <title>Thinklist</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  
 </head>
+
 <body>
   <div class="container">
     <nav class="navbar navbar-default" role="navigation">
@@ -22,6 +26,7 @@
             <%= image_tag 'thinkful.png', class: 'logo' %>
             Thinklist
           <% end %>
+          
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,6 +51,11 @@
               <%= link_to 'New', new_listing_path %>
             </li>
           </ul>
+          
+          <ul>
+	          <li>Create model User</li>
+	          
+          </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
@@ -56,5 +66,6 @@
 
     <%= yield %>
   </div>
+  
 </body>
 </html>

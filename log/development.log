@@ -1030,3 +1030,237 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-25 13:52:14
 
 
 Started GET "/assets/thinkful.png" for 127.0.0.1 at 2015-08-25 13:52:14 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-25 14:07:17 -0700
+Processing by ListingsController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "listings"
+  Rendered listings/_list.html.erb (10.7ms)
+  Rendered listings/index.html.erb within layouts/application (14.1ms)
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories"   ORDER BY name ASC[0m
+Completed 200 OK in 1457ms (Views: 1446.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/assets/thinkful.png" for 127.0.0.1 at 2015-08-25 14:07:18 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-25 14:08:55 -0700
+Processing by ListingsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "listings"
+  Rendered listings/_list.html.erb (1.4ms)
+  Rendered listings/index.html.erb within layouts/application (2.9ms)
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"   ORDER BY name ASC[0m
+Completed 200 OK in 1283ms (Views: 1280.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/assets/thinkful.png" for 127.0.0.1 at 2015-08-25 14:08:56 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-25 14:39:23 -0700
+Processing by ListingsController#index as HTML
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "listings"
+  Rendered listings/_list.html.erb (19.1ms)
+  Rendered listings/index.html.erb within layouts/application (22.2ms)
+Completed 500 Internal Server Error in 207ms
+
+ActionView::Template::Error (couldn't find file 'browserid'
+  (in /Users/sophiadengo/Desktop/mdc-instagram-rails/app/assets/javascripts/application.js:17)):
+    3: <head>
+    4:   <title>Thinklist</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   
+    9:   <!-- Setup BrowserID with alert debugging -->
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2273653175043653265_70287608358960'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-25 14:40:17 -0700
+Processing by ListingsController#index as HTML
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  Rendered listings/_list.html.erb (3.2ms)
+  Rendered listings/index.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 77ms
+
+ActionView::Template::Error (couldn't find file 'browserid'
+  (in /Users/sophiadengo/Desktop/mdc-instagram-rails/app/assets/javascripts/application.js:17)):
+    3: <head>
+    4:   <title>Thinklist</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   
+    9:   <!-- Perform basic BrowserID setup in the head section -->
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2273653175043653265_70287614048340'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-25 14:40:50 -0700
+Processing by ListingsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "listings"
+  Rendered listings/_list.html.erb (1.8ms)
+  Rendered listings/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 66ms
+
+ActionView::Template::Error (couldn't find file 'browserid'
+  (in /Users/sophiadengo/Desktop/mdc-instagram-rails/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Thinklist</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   
+    9:   <!-- Perform basic BrowserID setup in the head section -->
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2273653175043653265_70287614048340'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-25 14:40:54 -0700
+Processing by ListingsController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "listings"[0m
+  Rendered listings/_list.html.erb (1.1ms)
+  Rendered listings/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 57ms
+
+ActionView::Template::Error (couldn't find file 'browserid'
+  (in /Users/sophiadengo/Desktop/mdc-instagram-rails/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Thinklist</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   
+    9:   <!-- Perform basic BrowserID setup in the head section -->
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2273653175043653265_70287614048340'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.5ms)
