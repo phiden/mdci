@@ -15,18 +15,8 @@
 		    <li>
 		      <%= link_to 'All', root_path %>
 		    </li>
-		    <% Category.order('name ASC').each do |category| %>
-		      <li>
-		        <%= link_to category.name, category %>
-		      </li>
-		    <% end %>
 		  </ul>
 		</li>
-		
-		<li>
-      <%= link_to 'New', new_listing_path %>
-    </li>
-		
 	</nav>
 	
 	

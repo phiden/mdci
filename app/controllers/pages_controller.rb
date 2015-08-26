@@ -1,9 +1,15 @@
 class PagesController < ApplicationController
 	
-	def login
-		@hashtag = Hashtag.all
-		@lat_lng = LatLng.all
+	def admin
+		# Admin page goes here, in the future
+	end
+	
+	def map
+		@map_settings = MapSettings.create!(
+			hashtag: 'puppy',
+			latitude: 100,
+			longitude: 100
+		)
 	end
 	
 end
-
