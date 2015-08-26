@@ -8,6 +8,8 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  
 </head>
 
 <body>
@@ -16,13 +18,14 @@
 	
   <div id="container">
     
-    <% if notice %>
-      <div class="alert alert-success"><%= notice %></div>
-    <% end %>
-
     <%= yield %>
     
   </div>
   
 </body>
+
+	<!-- leaflet -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+	<!--<script src="/assets/leaflet.js">-->
+	
 </html>

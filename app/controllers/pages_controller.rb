@@ -6,9 +6,9 @@ class PagesController < ApplicationController
 	
 	def map
 		@map_settings = MapSettings.create!(
-			hashtag: 'puppy',
-			latitude: 100,
-			longitude: 100
+			hashtag: '305',
+			latitude: 25.7667,
+			longitude: -80.2000
 		)
 	end
 	
