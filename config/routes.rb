@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   
   resources :listings, except: [:index]
 
-  root 'listings#index'
+  root 'listings#index' #change this eventually, since you won't have listings.
+  
   
   resources :categories, only: [:show]
   

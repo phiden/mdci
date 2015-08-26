@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 	
-    console.log( "hello world" );
+    var currentUser = 'sdengo@gmail.com';
     
     $("#sign_in").click(function() {
 	    
@@ -17,7 +17,7 @@ $( document ).ready(function() {
 	    
     })
 
-		var currentUser = 'sdengo@gmail.com';
+		
 
 		navigator.id.watch({
 		  loggedInUser: currentUser,
@@ -50,4 +50,15 @@ $( document ).ready(function() {
 		    });
 		  }
 		});
+		
+		
+		/********************** Admin panel stuff ********************/
+		
+		$('#submitHashtag').click(function() {
+			
+			console.log('save to db');
+			window.location.href = '/';
+				
+		})
+		
 });
