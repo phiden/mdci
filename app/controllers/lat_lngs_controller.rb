@@ -16,7 +16,19 @@ class LatLngsController < ApplicationController
   def new
     @lat_lng = LatLng.new
   end
+  
+	def login 
+	  @lat_lng = LatLng.new
+	end
+	
+	def form
+	  @lat_lng = LatLng.new
+	end
 
+	def index
+		#@lat_lng = LatLng.new
+	end
+	
   # GET /lat_lngs/1/edit
   def edit
   end

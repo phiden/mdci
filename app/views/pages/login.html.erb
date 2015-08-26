@@ -3,12 +3,10 @@
 
 <div class="row">
   <div class="six columns">
-  	<label for="searchTag">Hashtag</label>
-		<input class="u-full-width" type="text" placeholder="#codeforamerica" id="searchTag">
-	
-		<label for='coordinates'>What are your coordinates?</label>
-		<input class='' type='text' placeholder='Lat, Lng' id='coordinates'>
-	
+	  
+	<%= render 'lat_lngs/form' %>
+	<%= render 'hashtags/form' %>
+
   </div>
   
   <i>clicking submit needs to save hashtag and lat/lng to database for later retrieval.</i>
