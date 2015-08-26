@@ -1,17 +1,19 @@
 @import "bootstrap-sprockets";
-@import "bootstrap";
+//@import "bootstrap";
 
 @import "scaffolds";
 @import "listings";
 
 body {
 	
+		
 }
 
 header {
 	
 	width:100%;
-	background-color:#cacaca;	
+	background-color:#cacaca;
+		
 }
 
 header nav li {
