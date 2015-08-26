@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   
+  resources :lat_lngs
+
+  resources :hashtags
+
+  resources :users
+
   resources :listings, except: [:index]
 
   root 'listings#index' #change this eventually, since you won't have listings.

@@ -1,0 +1,27 @@
+<h1>Listing lat_lngs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lat</th>
+      <th>Lng</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lat_lngs.each do |lat_lng| %>
+      <tr>
+        <td><%= lat_lng.lat %></td>
+        <td><%= lat_lng.lng %></td>
+        <td><%= link_to 'Show', lat_lng %></td>
+        <td><%= link_to 'Edit', edit_lat_lng_path(lat_lng) %></td>
+        <td><%= link_to 'Destroy', lat_lng, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lat lng', new_lat_lng_path %>
