@@ -14,8 +14,8 @@ $( document ).ready(function() {
 	var mapLon = $('#longitude').text();
 	
 	var myIcon = L.icon({
-    iconUrl: 'icon.png',
-    iconRetinaUrl: 'retina-icon.png',
+    iconUrl: 'assets/icon.png',
+    iconRetinaUrl: 'assets/retina-icon.png',
     iconSize: [25, 25],
     iconAnchor: [22, 94],
     popupAnchor: [-3, -76]
@@ -119,7 +119,7 @@ $( document ).ready(function() {
 			
 			map = L.map('map').setView([mapLat, mapLon], 10);
 		
-			L.tileLayer('//a.tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
+			L.tileLayer('http://a.tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
 			attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>'
 	}).addTo(map);
 
