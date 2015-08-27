@@ -1,0 +1,33 @@
+/* line 6, /Users/sophiadengo/Desktop/mdc-instagram-rails/app/assets/stylesheets/application.css.scss */
+header {
+  width: 100%;
+  background-color: #cacaca;
+}
+
+/* line 13, /Users/sophiadengo/Desktop/mdc-instagram-rails/app/assets/stylesheets/application.css.scss */
+header nav li {
+  display: inline-block;
+  list-style: none;
+}
+
+/* line 19, /Users/sophiadengo/Desktop/mdc-instagram-rails/app/assets/stylesheets/application.css.scss */
+#container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 25, /Users/sophiadengo/Desktop/mdc-instagram-rails/app/assets/stylesheets/application.css.scss */
+nav li {
+  width: 20%;
+}
+
+/* line 30, /Users/sophiadengo/Desktop/mdc-instagram-rails/app/assets/stylesheets/application.css.scss */
+#map {
+  width: 80%;
+  height: 600px;
+}
+
+/* line 36, /Users/sophiadengo/Desktop/mdc-instagram-rails/app/assets/stylesheets/application.css.scss */
+.hidden {
+  display: none;
+}

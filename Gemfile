@@ -9,6 +9,8 @@ gem 'rails', '4.1.5'
 
 gem 'pg'
 
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 
