@@ -52,5 +52,6 @@ gem 'spring',        group: :development
 
 gem 'puma'
 gem 'rails_12factor', group: :production
+gem 'sorcery'
 
 
