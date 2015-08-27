@@ -1411,3 +1411,478 @@ Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-27 16:39:17 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-27 16:39:17 -0700
+
+
+Started GET "/users" for 127.0.0.1 at 2015-08-27 16:44:50 -0700
+
+ArgumentError (Invalid route name, already in use: 'root' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+http://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  config/routes.rb:10:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (68.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-08-27 16:44:50 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 743ms (Views: 736.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:50 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:50 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-27 16:44:50 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:50 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:50 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:50 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:50 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:50 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:51 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-27 16:44:52 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 73ms (Views: 71.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-27 16:44:55 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-27 16:44:55 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:55 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:55 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:55 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:55 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:55 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:55 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-27 16:44:55 -0700
+
+
+Started GET "/login" for 127.0.0.1 at 2015-08-27 16:45:01 -0700
+
+SyntaxError (/Users/sophiadengo/Desktop/mdc-instagram-rails/app/controllers/user_sessions_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/user_sessions_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (53.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-08-27 16:45:01 -0700
+
+SyntaxError (/Users/sophiadengo/Desktop/mdc-instagram-rails/app/controllers/user_sessions_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/user_sessions_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-27 16:45:22 -0700
+Processing by PagesController#map as HTML
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "map_settings" ("created_at", "hashtag", "latitude", "longitude", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2015-08-27 23:45:22.281050"], ["hashtag", "305"], ["latitude", "25.7667"], ["longitude", "-80.2"], ["updated_at", "2015-08-27 23:45:22.281050"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  Rendered pages/map.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (18.0ms)
+Completed 500 Internal Server Error in 81ms
+
+ActionView::Template::Error (undefined method `login_path' for #<#<Class:0x007fd93437e910>:0x007fd93437de98>):
+    12:       <%= link_to "Logout", :logout, method: :post %>
+    13:     <% else %>
+    14:       <%= link_to "Register", new_user_path %> |
+    15:       <%= link_to "Login", :login %>
+    16:     <% end %>
+    17:   </div>
+    18:   
+  app/views/layouts/_header.html.erb:15:in `_app_views_layouts__header_html_erb__1625858468425542840_70285408595760'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__4338121176472053567_70285431548760'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-27 16:45:49 -0700
+
+ArgumentError (Invalid route name, already in use: 'root' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+http://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  config/routes.rb:12:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (60.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-27 16:45:58 -0700
+Processing by PagesController#map as HTML
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "map_settings" ("created_at", "hashtag", "latitude", "longitude", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-08-27 23:45:58.383293"], ["hashtag", "305"], ["latitude", "25.7667"], ["longitude", "-80.2"], ["updated_at", "2015-08-27 23:45:58.383293"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  Rendered pages/map.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 81ms (Views: 69.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-27 16:45:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-27 16:45:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-27 16:45:58 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-27 16:45:58 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-27 16:45:58 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-08-27 16:45:58 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-08-27 16:45:58 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-08-27 16:45:58 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-27 16:45:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-27 16:45:58 -0700
+
+
+Started GET "/login" for 127.0.0.1 at 2015-08-27 16:46:01 -0700
+
+SyntaxError (/Users/sophiadengo/Desktop/mdc-instagram-rails/app/controllers/user_sessions_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/user_sessions_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (53.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-08-27 16:46:01 -0700
+
+SyntaxError (/Users/sophiadengo/Desktop/mdc-instagram-rails/app/controllers/user_sessions_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/user_sessions_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (48.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-08-27 16:46:17 -0700
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (1.4ms)
+  Rendered user_sessions/new.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 51ms (Views: 45.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-27 16:46:17 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:17 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:17 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:17 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:17 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:17 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:17 -0700
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-08-27 16:46:19 -0700
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FJQnzzinMWNAdgnGRJbSwYIYJz4gBLoi39SFryeDK0U=", "email"=>"sdengo@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (2.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'sdengo@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/users
+Completed 302 Found in 188ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-08-27 16:46:19 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.2ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  Rendered layouts/_header.html.erb (18.0ms)
+Completed 200 OK in 71ms (Views: 68.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-27 16:46:19 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:19 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:19 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:19 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:19 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:19 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-27 16:46:21 -0700
+Processing by PagesController#map as HTML
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "map_settings" ("created_at", "hashtag", "latitude", "longitude", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-08-27 23:46:21.287237"], ["hashtag", "305"], ["latitude", "25.7667"], ["longitude", "-80.2"], ["updated_at", "2015-08-27 23:46:21.287237"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered pages/map.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 59ms (Views: 45.6ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-27 16:46:25 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-27 16:46:34 -0700
+Processing by PagesController#map as HTML
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "map_settings" ("created_at", "hashtag", "latitude", "longitude", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-08-27 23:46:34.135298"], ["hashtag", "305"], ["latitude", "25.7667"], ["longitude", "-80.2"], ["updated_at", "2015-08-27 23:46:34.135298"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  Rendered pages/map.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  Rendered layouts/_header.html.erb (2.7ms)
+Completed 200 OK in 52ms (Views: 46.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-27 16:46:34 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:34 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:34 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:34 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:34 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:34 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-27 16:46:34 -0700
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2015-08-27 16:47:11 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered users/_form.html.erb (3.5ms)
+  Rendered users/edit.html.erb within layouts/application (6.6ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 58ms (Views: 55.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/logout" for 127.0.0.1 at 2015-08-27 16:47:13 -0700
+Processing by UserSessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FJQnzzinMWNAdgnGRJbSwYIYJz4gBLoi39SFryeDK0U="}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-08-27 16:47:13 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-27 16:47:13 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:13 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:14 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:14 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:14 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:14 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:14 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-27 16:47:15 -0700
+Processing by PagesController#map as HTML
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "map_settings" ("created_at", "hashtag", "latitude", "longitude", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-08-27 23:47:15.904711"], ["hashtag", "305"], ["latitude", "25.7667"], ["longitude", "-80.2"], ["updated_at", "2015-08-27 23:47:15.904711"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  Rendered pages/map.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 45ms (Views: 41.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-27 16:47:16 -0700
+Processing by PagesController#map as HTML
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "map_settings" ("created_at", "hashtag", "latitude", "longitude", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2015-08-27 23:47:16.792717"], ["hashtag", "305"], ["latitude", "25.7667"], ["longitude", "-80.2"], ["updated_at", "2015-08-27 23:47:16.792717"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  Rendered pages/map.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 49ms (Views: 45.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-27 16:47:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:16 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:16 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:16 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:16 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:16 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-27 16:47:16 -0700
