@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 	
-  before_action :require_login, only: [:index, :new, :create, :destroy, :show, :edit]
+  before_action :require_login, only: [:index, :destroy, :show, :edit]
 
   # GET /users
   # GET /users.json
@@ -20,7 +20,8 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
-  end
+	  @user = User.find(params[:id])
+	end
 
   # POST /users
   # POST /users.json
@@ -29,7 +30,9 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        redirect_to(:users, notice: 'User was successfully created')
+        format.html do
+        	redirect_to(:users, notice: 'User was successfully created')
+        end
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
@@ -42,6 +45,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1.json
   def update
     respond_to do |format|
+	    @user = User.find(params[:id])
       if @user.update(user_params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { render :show, status: :ok, location: @user }
@@ -55,9 +59,10 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
+	  @user = User.find(params[:id])
     @user.destroy
     respond_to do |format|
-      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+      format.html { redirect_to '/users/new', notice: 'User was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
