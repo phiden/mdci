@@ -4,6 +4,7 @@ class UserSessionsController < ApplicationController
 	
   def new
     @user = User.new
+    redirect_to('admin', notice: "You've been logged in!")
   end
 
   def create
