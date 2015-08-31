@@ -8047,3 +8047,611 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-31 16:43:10 -0700
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 16:43:10 -0700
+
+
+Started GET "/users" for 127.0.0.1 at 2015-08-31 16:49:03 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 74ms (Views: 63.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:03 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:03 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 16:49:03 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:03 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:03 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:03 -0700
+
+
+Started POST "/logout" for 127.0.0.1 at 2015-08-31 16:49:06 -0700
+Processing by UserSessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"h93iq9umZAXNpCAoOI1uHeR8/+vJzjrC2ZqvvOY2z90="}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 16:49:06 -0700
+Processing by PagesController#map as HTML
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "map_settings" ("created_at", "hashtag", "latitude", "longitude", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2015-08-31 23:49:06.071669"], ["hashtag", "305"], ["latitude", "25.7667"], ["longitude", "-80.2"], ["updated_at", "2015-08-31 23:49:06.071669"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+  Rendered pages/map.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 46.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 16:49:06 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:06 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:06 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:06 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:06 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:06 -0700
+
+
+Started GET "/login" for 127.0.0.1 at 2015-08-31 16:49:07 -0700
+Processing by UserSessionsController#new as HTML
+Redirected to http://localhost:3000admin
+Completed 500 Internal Server Error in 3ms
+
+URI::InvalidURIError (bad URI(is not URI?): http://localhost:3000admin):
+  /Users/sophiadengo/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/uri/rfc3986_parser.rb:66:in `split'
+  /Users/sophiadengo/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/uri/rfc3986_parser.rb:72:in `parse'
+  /Users/sophiadengo/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/uri/common.rb:226:in `parse'
+  turbolinks (2.5.3) lib/turbolinks/x_domain_blocker.rb:9:in `same_origin?'
+  turbolinks (2.5.3) lib/turbolinks/x_domain_blocker.rb:16:in `abort_xdomain_redirect'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:231:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:231:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (70.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-08-31 16:49:08 -0700
+Processing by UserSessionsController#new as HTML
+Redirected to http://localhost:3000admin
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 16:49:11 -0700
+Processing by PagesController#map as HTML
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "map_settings" ("created_at", "hashtag", "latitude", "longitude", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-08-31 23:49:11.041877"], ["hashtag", "305"], ["latitude", "25.7667"], ["longitude", "-80.2"], ["updated_at", "2015-08-31 23:49:11.041877"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  Rendered pages/map.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 57ms (Views: 52.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 16:49:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:11 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:11 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:11 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:11 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:11 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:11 -0700
+
+
+Started GET "/login" for 127.0.0.1 at 2015-08-31 16:49:12 -0700
+Processing by UserSessionsController#new as HTML
+Redirected to http://localhost:3000admin
+Completed 500 Internal Server Error in 1ms
+
+URI::InvalidURIError (bad URI(is not URI?): http://localhost:3000admin):
+  /Users/sophiadengo/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/uri/rfc3986_parser.rb:66:in `split'
+  /Users/sophiadengo/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/uri/rfc3986_parser.rb:72:in `parse'
+  /Users/sophiadengo/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/uri/common.rb:226:in `parse'
+  turbolinks (2.5.3) lib/turbolinks/x_domain_blocker.rb:9:in `same_origin?'
+  turbolinks (2.5.3) lib/turbolinks/x_domain_blocker.rb:16:in `abort_xdomain_redirect'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:231:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:231:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-08-31 16:49:12 -0700
+Processing by UserSessionsController#new as HTML
+Redirected to http://localhost:3000admin
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 16:49:43 -0700
+Processing by PagesController#map as HTML
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "map_settings" ("created_at", "hashtag", "latitude", "longitude", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2015-08-31 23:49:43.322048"], ["hashtag", "305"], ["latitude", "25.7667"], ["longitude", "-80.2"], ["updated_at", "2015-08-31 23:49:43.322048"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered pages/map.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 57ms (Views: 46.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:43 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:43 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:43 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:43 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 16:49:43 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:43 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:43 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 16:49:43 -0700
+
+
+Started GET "/login" for 127.0.0.1 at 2015-08-31 16:49:46 -0700
+Processing by UserSessionsController#new as HTML
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 9ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-08-31 16:49:46 -0700
+Processing by PagesController#admin as HTML
+  Rendered pages/admin.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 16:53:27 -0700
+Processing by PagesController#map as HTML
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "map_settings" ("created_at", "hashtag", "latitude", "longitude", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-08-31 23:53:27.117012"], ["hashtag", "305"], ["latitude", "25.7667"], ["longitude", "-80.2"], ["updated_at", "2015-08-31 23:53:27.117012"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  Rendered pages/map.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 69ms (Views: 56.0ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 16:53:27 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:27 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:27 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:27 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:27 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:27 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:27 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:27 -0700
+
+
+Started GET "/login" for 127.0.0.1 at 2015-08-31 16:53:28 -0700
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (1.1ms)
+  Rendered user_sessions/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 69ms (Views: 59.7ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-08-31 16:53:33 -0700
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cloh7goiSzehsku/ueP5JUC+bMptG/SI0ICKpNQ3NtI=", "email"=>"sdengo@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'sdengo@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/users
+Completed 302 Found in 213ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-08-31 16:53:33 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 62.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 16:53:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:33 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:33 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:33 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:33 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:33 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:33 -0700
+
+
+Started GET "/users" for 127.0.0.1 at 2015-08-31 16:53:57 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 64ms (Views: 52.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 16:53:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:57 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:57 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:57 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:57 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:57 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:57 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:57 -0700
+
+
+Started POST "/logout" for 127.0.0.1 at 2015-08-31 16:53:59 -0700
+Processing by UserSessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cloh7goiSzehsku/ueP5JUC+bMptG/SI0ICKpNQ3NtI="}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 16:53:59 -0700
+Processing by PagesController#map as HTML
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "map_settings" ("created_at", "hashtag", "latitude", "longitude", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2015-08-31 23:53:59.653261"], ["hashtag", "305"], ["latitude", "25.7667"], ["longitude", "-80.2"], ["updated_at", "2015-08-31 23:53:59.653261"]]
+  [1m[35m (1.5ms)[0m  COMMIT
+  Rendered pages/map.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 74ms (Views: 60.9ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:59 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:59 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:59 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:59 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:59 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 16:53:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 16:53:59 -0700
+
+
+Started GET "/login" for 127.0.0.1 at 2015-08-31 16:54:01 -0700
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (0.8ms)
+  Rendered user_sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-08-31 16:54:02 -0700
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E/8zPvD275skgiEkGY39P6VVI+OSVBJUOZBVuhAewuU=", "email"=>"sdengo@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'sdengo@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 211ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-08-31 16:54:02 -0700
+Processing by PagesController#admin as HTML
+  Rendered pages/admin.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 16:54:02 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-08-31 16:54:02 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-31 16:54:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 16:54:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 16:54:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 16:54:02 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-08-31 16:54:02 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-08-31 16:54:02 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-08-31 16:54:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 16:54:02 -0700
