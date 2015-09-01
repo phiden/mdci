@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+var ready = function(){
 	
 	console.log('hello world');
 	
@@ -151,4 +151,7 @@ $( document ).ready(function() {
 			
 	})
 		
-});
+};
+
+$(document).ready(ready);
+$(document).on('page:load', ready);

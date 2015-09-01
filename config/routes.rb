@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
   
-  
-
-	# root :to => 'users#index'
 	resources :user_sessions
 	resources :users
+	resources :map_settings
 	
+	#root 'pages#map'
+	root 'application#map'
+	
+	get 'admin' => 'application#admin_map'
+	post 'admin' => 'application#edit_map'
+
 	get 'login' => 'user_sessions#new', :as => :login
 	post 'logout' => 'user_sessions#destroy', :as => :logout
-
-  root 'pages#map'
-
+	
 end

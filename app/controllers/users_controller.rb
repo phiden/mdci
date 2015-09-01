@@ -1,27 +1,35 @@
 class UsersController < ApplicationController
 	
-	skip_before_filter :require_login, only: [:index, :new, :create]
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :require_login, only: [:index, :destroy, :show, :edit]
 
   # GET /users
   # GET /users.json
   def index
     @users = User.all
+    @map_settings = MapSettings
+    
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
-  end
+	  @users = User.all
+	  @user = User.find(params[:id])
+	end
 
   # GET /users/new
   def new
     @user = User.new
   end
+  
+  def admin
+	  @users = User.all
+	end
 
   # GET /users/1/edit
   def edit
-  end
+	  @user = User.find(params[:id])
+	end
 
   # POST /users
   # POST /users.json
@@ -30,7 +38,9 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        redirect_to(:users, notice: 'User was successfully created')
+        format.html do
+        	redirect_to('admin', notice: 'User was successfully created')
+        end
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
@@ -43,6 +53,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1.json
   def update
     respond_to do |format|
+	    @user = User.find(params[:id])
       if @user.update(user_params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { render :show, status: :ok, location: @user }
@@ -56,9 +67,10 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
+	  @user = User.find(params[:id])
     @user.destroy
     respond_to do |format|
-      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+      format.html { redirect_to '/admin', notice: 'User was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
