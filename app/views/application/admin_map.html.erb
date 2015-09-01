@@ -1,19 +1,22 @@
 <h1> ADMIN (map)</h1>
 
-<% @users.each do |user| %>
-<p>
-  <strong>Email:</strong>
-  <%= user.email %>
-  <td><%= link_to 'Edit', edit_user_path(user) %></td>
-  <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        
-</p>
+<% if @users != nil %>
+	<% @users.each do |user| %>
+	<p>
+	  <strong>Email:</strong>
+	  <%= user.email %>
+	  <td><%= link_to 'Edit', edit_user_path(user) %></td>
+	  <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	        
+	</p>
+<% end %>
 <% end %>
 
 <h2>form</h2>
 
 <!-- map creation form -->
 
+<% if @map_settings != nil %>
 <%= form_for(@map_settings) do |f| %>
 
   <% if @map_settings.errors.any? %>
@@ -43,6 +46,8 @@
 </div>
 
   <div class="actions">
+	  <input type="submit" value="Submit Form" name="submit">
     <%= f.submit %>
   </div>
+<% end %>
 <% end %>

@@ -17834,3 +17834,3253 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 15:09:10 -0700
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 15:09:10 -0700
+
+
+Started DELETE "/users/15" for 127.0.0.1 at 2015-09-01 15:10:15 -0700
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "id"=>"15"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 15]]
+  [1m[35m (1.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 36ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 15:10:15 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[36mMapSetting Load (0.6ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/admin_map.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 102ms (Views: 98.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 15:10:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:15 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:15 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:15 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:15 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:15 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:15 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:15 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:15 -0700
+
+
+Started DELETE "/users/14" for 127.0.0.1 at 2015-09-01 15:10:20 -0700
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "id"=>"14"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 14]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 14]]
+  [1m[35m (1.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 6ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 15:10:20 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[36mMapSetting Load (0.4ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/admin_map.html.erb within layouts/application (4.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 65ms (Views: 62.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:20 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:20 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:20 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:20 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 15:10:20 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:20 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:20 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:20 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:20 -0700
+
+
+Started DELETE "/users/13" for 127.0.0.1 at 2015-09-01 15:10:23 -0700
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "id"=>"13"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 6ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 15:10:23 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[36mMapSetting Load (0.4ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/admin_map.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 71ms (Views: 68.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 15:10:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:23 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:23 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:23 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:23 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:23 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:23 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 15:10:23 -0700
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 15:15:45 -0700
+
+ActionController::RoutingError (uninitialized constant MapSettingsController):
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.1ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.5ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (112.4ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 15:18:08 -0700
+
+ActionController::RoutingError (uninitialized constant MapSettingsController):
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.2ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.6ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (96.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 15:19:21 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[35mMapSetting Load (0.5ms)[0m  SELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered application/admin_map.html.erb within layouts/application (21.6ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (3.3ms)
+Completed 200 OK in 178ms (Views: 137.3ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 15:19:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 15:19:21 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 15:19:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 15:19:21 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 15:19:21 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 15:19:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 15:19:21 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 15:19:21 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 15:19:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 15:19:21 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 15:19:21 -0700
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 15:19:22 -0700
+
+ActionController::RoutingError (uninitialized constant MapSettingsController):
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (82.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 15:20:12 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[36mMapSetting Load (1.0ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/admin_map.html.erb within layouts/application (12.4ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (3.4ms)
+Completed 200 OK in 89ms (Views: 71.3ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 15:20:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 15:20:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 15:20:12 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 15:20:12 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 15:20:12 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 15:20:12 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 15:20:12 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 15:20:12 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 15:20:12 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 15:20:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 15:20:12 -0700
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 15:20:14 -0700
+
+ActionController::RoutingError (uninitialized constant MapSettingsController):
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (95.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 15:21:16 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[35mMapSetting Load (0.4ms)[0m  SELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered application/admin_map.html.erb within layouts/application (13.4ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 101ms (Views: 80.8ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 15:21:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:16 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:16 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:16 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:16 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:16 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:16 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:16 -0700
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 15:21:18 -0700
+
+ActionController::RoutingError (uninitialized constant MapSettingsController):
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (85.0ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 15:21:51 -0700
+
+ActionController::RoutingError (uninitialized constant MapSettingsController):
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (90.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 15:21:53 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[36mMapSetting Load (0.3ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/admin_map.html.erb within layouts/application (13.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (3.1ms)
+Completed 200 OK in 86ms (Views: 66.5ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 15:21:53 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:53 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:53 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:53 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:53 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:53 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:53 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 15:21:53 -0700
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 15:21:54 -0700
+
+ActionController::RoutingError (uninitialized constant MapSettingsController):
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.0ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (86.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 15:22:20 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[35mMapSetting Load (0.5ms)[0m  SELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered application/admin_map.html.erb within layouts/application (11.5ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (2.7ms)
+Completed 200 OK in 88ms (Views: 71.0ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 15:22:20 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 15:22:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 15:22:20 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 15:22:20 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 15:22:20 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 15:22:20 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 15:22:20 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 15:22:20 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 15:22:20 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 15:22:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 15:22:20 -0700
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 15:22:21 -0700
+
+ActionController::RoutingError (uninitialized constant MapSettingsController):
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.5ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (92.1ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 15:25:42 -0700
+
+AbstractController::ActionNotFound (The action 'update' could not be found for MapSettingsController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (3.4ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 15:25:57 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template map_settings/update, application/update with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views"
+):
+  actionview (4.1.5) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.5) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.5) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.5) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.5) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.5) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.5) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.5) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/sophiadengo/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.1.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.8ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 15:27:10 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.5ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+Completed 500 Internal Server Error in 23ms
+
+NameError (undefined local variable or method `user_params' for #<MapSettingsController:0x007f8447d79e20>):
+  app/controllers/map_settings_controller.rb:8:in `block in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (67.2ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 15:28:09 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.4ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+Completed 500 Internal Server Error in 12ms
+
+ActionController::UnpermittedParameters (found unpermitted parameters: utf8, _method, authenticity_token, map_setting, submit, id):
+  app/controllers/map_settings_controller.rb:30:in `user_params'
+  app/controllers/map_settings_controller.rb:8:in `block in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (69.4ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 15:28:50 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.5ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 16ms
+
+ArgumentError (When assigning attributes, you must pass a hash as an argument.):
+  app/controllers/map_settings_controller.rb:8:in `block in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.8ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 15:29:03 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.5ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+Completed 500 Internal Server Error in 12ms
+
+ActionController::UnpermittedParameters (found unpermitted parameters: utf8, _method, authenticity_token, map_setting, submit, id):
+  app/controllers/map_settings_controller.rb:30:in `user_params'
+  app/controllers/map_settings_controller.rb:8:in `block in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (63.4ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 15:29:52 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.3ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000admin
+Completed 500 Internal Server Error in 29ms
+
+NoMethodError (undefined method `redirects_to' for #<MapSettingsController:0x007f844591f4f8>):
+  app/controllers/map_settings_controller.rb:17:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.7ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 15:30:33 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.5ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Completed 500 Internal Server Error in 24ms
+
+ActionView::MissingTemplate (Missing template map_settings/admin, application/admin with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views"
+):
+  app/controllers/map_settings_controller.rb:9:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (1.3ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:08:57 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (2.6ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 65ms
+
+ActionView::MissingTemplate (Missing template map_settings/application#admin, application/application#admin with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views"
+):
+  app/controllers/map_settings_controller.rb:9:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (1.7ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:09:04 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.3ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 500 Internal Server Error in 18ms
+
+ActionView::MissingTemplate (Missing template /application#admin with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views"
+  * "/Users/sophiadengo/Desktop/mdc-instagram-rails"
+  * "/"
+):
+  app/controllers/map_settings_controller.rb:9:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (1.2ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:09:10 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.2ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 17ms
+
+ActionView::MissingTemplate (Missing template application/admin with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views"
+  * "/Users/sophiadengo/Desktop/mdc-instagram-rails"
+  * "/"
+):
+  app/controllers/map_settings_controller.rb:9:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (1.0ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:09:32 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.2ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 500 Internal Server Error in 21ms
+
+NoMethodError (undefined method `redirects_to' for #<MapSettingsController:0x007f844612b4d0>):
+  app/controllers/map_settings_controller.rb:11:in `block in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.2ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:09:40 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.2ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000admin
+Completed 406 Not Acceptable in 10ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (60.4ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:10:33 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.2ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000admin
+Completed 302 Found in 14ms (ActiveRecord: 4.1ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:10:34 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.3ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000admin
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:10:40 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.5ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000admin
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:10:42 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.3ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000admin
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 16:10:46 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[35mMapSetting Load (3.1ms)[0m  SELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered application/admin_map.html.erb within layouts/application (14.4ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (3.7ms)
+Completed 200 OK in 104ms (Views: 90.9ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:10:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:10:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:10:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:10:46 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:10:46 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:10:46 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:10:46 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:10:46 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:10:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:10:46 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:10:46 -0700
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:10:49 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.4ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000admin
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 16:11:12 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[35mMapSetting Load (0.4ms)[0m  SELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered application/admin_map.html.erb within layouts/application (11.9ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (3.8ms)
+Completed 200 OK in 99ms (Views: 78.7ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:13 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:13 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:13 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:13 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:11:13 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:13 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:13 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:13 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:13 -0700
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:11:14 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.3ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000admin
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:11:16 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (1.3ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000admin
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:11:16 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.4ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000admin
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:11:17 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.4ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000admin
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:11:17 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.4ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000admin
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:11:17 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.3ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000admin
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 16:11:33 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[36mMapSetting Load (0.5ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/admin_map.html.erb within layouts/application (7.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 76ms (Views: 73.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:11:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:33 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:33 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:33 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:33 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:33 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:33 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:11:33 -0700
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:11:35 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "commit"=>"Update Map setting", "id"=>"207"}
+  [1m[35mMapSetting Load (0.5ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (1.7ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://localhost:3000admin
+Completed 302 Found in 9ms (ActiveRecord: 3.1ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:11:36 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "commit"=>"Update Map setting", "id"=>"207"}
+  [1m[36mMapSetting Load (0.3ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000admin
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:11:41 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"puppy"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.4ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000admin
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 16:12:00 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[36mMapSetting Load (0.4ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/admin_map.html.erb within layouts/application (10.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 86ms (Views: 63.1ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:12:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:00 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:00 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:00 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:00 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:00 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:00 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:00 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:00 -0700
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 16:12:03 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[35mMapSetting Load (0.4ms)[0m  SELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered application/admin_map.html.erb within layouts/application (3.3ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 58ms (Views: 55.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:12:03 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:03 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:03 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:03 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:03 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:03 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:03 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:03 -0700
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:12:09 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"kitten"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.3ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (6.1ms)[0m  [1mUPDATE "map_settings" SET "hashtag" = $1, "updated_at" = $2 WHERE "map_settings"."id" = 207[0m  [["hashtag", "kitten"], ["updated_at", "2015-09-01 23:12:09.383162"]]
+  [1m[35m (2.9ms)[0m  COMMIT
+Redirected to http://localhost:3000admin
+Completed 302 Found in 23ms (ActiveRecord: 9.4ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:12:10 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"kitten"}, "commit"=>"Update Map setting", "id"=>"207"}
+  [1m[36mMapSetting Load (1.3ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000admin
+Completed 302 Found in 5ms (ActiveRecord: 1.6ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:12:12 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"kitten"}, "commit"=>"Update Map setting", "id"=>"207"}
+  [1m[35mMapSetting Load (0.6ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000admin
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 16:12:12 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[36mMapSetting Load (0.7ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/admin_map.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 57ms (Views: 53.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:12:12 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:12 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:12 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:12 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:12 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:12 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:12 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:12 -0700
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 16:12:35 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[35mMapSetting Load (0.4ms)[0m  SELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered application/admin_map.html.erb within layouts/application (16.3ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 88ms (Views: 71.2ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:12:35 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:35 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:35 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:35 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:35 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:35 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:35 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:12:35 -0700
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:12:38 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"kitten"}, "commit"=>"Update Map setting", "id"=>"207"}
+  [1m[36mMapSetting Load (0.3ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 8ms
+
+ActionView::MissingTemplate (Missing template map_settings/admin, application/admin with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views"
+):
+  app/controllers/map_settings_controller.rb:11:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.8ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:13:57 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"kitten"}, "commit"=>"Update Map setting", "id"=>"207"}
+  [1m[35mMapSetting Load (0.5ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered application/admin_map.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 46ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1> ADMIN (map)</h1>
+    2: 
+    3: <% @users.each do |user| %>
+    4: <p>
+    5:   <strong>Email:</strong>
+    6:   <%= user.email %>
+  app/views/application/admin_map.html.erb:3:in `_app_views_application_admin_map_html_erb__1832288078901729346_70103034335340'
+  app/controllers/map_settings_controller.rb:11:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.0ms)
+
+
+Started GET "/map_settings/" for 127.0.0.1 at 2015-09-01 16:14:10 -0700
+
+AbstractController::ActionNotFound (The action 'index' could not be found for MapSettingsController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.9ms)
+
+
+Started GET "/map_settings/" for 127.0.0.1 at 2015-09-01 16:14:14 -0700
+
+AbstractController::ActionNotFound (The action 'index' could not be found for MapSettingsController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/map_settings/" for 127.0.0.1 at 2015-09-01 16:14:46 -0700
+
+AbstractController::ActionNotFound (The action 'index' could not be found for MapSettingsController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-01 16:14:49 -0700
+Processing by ApplicationController#map as HTML
+  Rendered application/map.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (12.1ms)
+Completed 200 OK in 91ms (Views: 86.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:14:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:14:49 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:14:49 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:14:49 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:14:49 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:14:49 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:14:49 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:14:49 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:14:49 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:14:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:14:49 -0700
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 16:14:50 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[35mMapSetting Load (0.4ms)[0m  SELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered application/admin_map.html.erb within layouts/application (7.9ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (4.8ms)
+Completed 200 OK in 100ms (Views: 83.2ms | ActiveRecord: 6.1ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:15:17 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"cats"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.3ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "map_settings" SET "hashtag" = $1, "updated_at" = $2 WHERE "map_settings"."id" = 207[0m  [["hashtag", "cats"], ["updated_at", "2015-09-01 23:15:17.082267"]]
+  [1m[35m (1.6ms)[0m  COMMIT
+Completed 500 Internal Server Error in 18ms
+
+ActionView::MissingTemplate (Missing template map_settings/application#admin_map, application/application#admin_map with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views"
+):
+  app/controllers/map_settings_controller.rb:11:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 16:15:28 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[36mMapSetting Load (0.4ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/admin_map.html.erb within layouts/application (19.8ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (3.8ms)
+Completed 200 OK in 97ms (Views: 76.1ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:15:28 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:15:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:15:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:15:28 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:15:28 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:15:28 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:15:28 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:15:28 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:15:28 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:15:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:15:28 -0700
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:15:33 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"bumby"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.4ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "map_settings" SET "hashtag" = $1, "updated_at" = $2 WHERE "map_settings"."id" = 207  [["hashtag", "bumby"], ["updated_at", "2015-09-01 23:15:33.179918"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 10ms
+
+ActionView::MissingTemplate (Missing template /application#admin_map with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views"
+  * "/Users/sophiadengo/Desktop/mdc-instagram-rails"
+  * "/"
+):
+  app/controllers/map_settings_controller.rb:11:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.7ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:16:15 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"bumby"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.3ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 500 Internal Server Error in 17ms
+
+NoMethodError (undefined method `empty?' for nil:NilClass):
+  app/controllers/map_settings_controller.rb:11:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (65.5ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:16:29 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"bumby"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.4ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  Rendered application/admin_map.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1> ADMIN (map)</h1>
+    2: 
+    3: <% @users.each do |user| %>
+    4: <p>
+    5:   <strong>Email:</strong>
+    6:   <%= user.email %>
+  app/views/application/admin_map.html.erb:3:in `_app_views_application_admin_map_html_erb__1832288078901729346_70103034335340'
+  app/controllers/map_settings_controller.rb:11:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.7ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:17:28 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"bumby"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.3ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered application/admin_map.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 10ms
+
+SyntaxError (/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views/application/admin_map.html.erb:4: syntax error, unexpected keyword_do_cond, expecting ':'
+ @users.each do |user| 
+               ^
+/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views/application/admin_map.html.erb:18: syntax error, unexpected keyword_do_cond, expecting end-of-input
+...nd=  form_for(@map_settings) do |f| @output_buffer.safe_appe...
+...                               ^):
+  app/views/application/admin_map.html.erb:4: syntax error, unexpected keyword_do_cond, expecting ':'
+  app/views/application/admin_map.html.erb:18: syntax error, unexpected keyword_do_cond, expecting end-of-input
+  app/controllers/map_settings_controller.rb:11:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (65.3ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:18:29 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"bumby"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.5ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  Rendered application/admin_map.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 16ms
+
+SyntaxError (/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views/application/admin_map.html.erb:52: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views/application/admin_map.html.erb:54: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/application/admin_map.html.erb:52: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/application/admin_map.html.erb:54: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/map_settings_controller.rb:11:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (70.8ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:18:42 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"bumby"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.3ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered application/admin_map.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 11ms
+
+SyntaxError (/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views/application/admin_map.html.erb:12: syntax error, unexpected keyword_end
+'.freeze;@output_buffer.append=( end );@output_buffer.safe_append='
+                                    ^
+/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views/application/admin_map.html.erb:52: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views/application/admin_map.html.erb:54: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/application/admin_map.html.erb:12: syntax error, unexpected keyword_end
+  app/views/application/admin_map.html.erb:52: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/application/admin_map.html.erb:54: syntax error, unexpected keyword_end, expecting ')'
+  app/controllers/map_settings_controller.rb:11:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.6ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:18:56 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"bumby"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.5ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  Rendered application/admin_map.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    16: 
+    17: <!-- map creation form -->
+    18: 
+    19: <%= form_for(@map_settings) do |f| %>
+    20: 
+    21:   <% if @map_settings.errors.any? %>
+    22:     <div id="error_explanation">
+  app/views/application/admin_map.html.erb:19:in `_app_views_application_admin_map_html_erb__1832288078901729346_70103059198520'
+  app/controllers/map_settings_controller.rb:11:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.1ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:19:21 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"bumby"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.3ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  Rendered application/admin_map.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (20.4ms)
+Completed 200 OK in 103ms (Views: 92.4ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:19:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:19:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:19:22 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:19:22 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:19:22 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:19:22 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:19:22 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:19:22 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:19:22 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:19:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:19:22 -0700
+
+
+Started GET "/map_settings/admin" for 127.0.0.1 at 2015-09-01 16:19:55 -0700
+
+AbstractController::ActionNotFound (The action 'show' could not be found for MapSettingsController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-01 16:20:01 -0700
+Processing by ApplicationController#map as HTML
+  Rendered application/map.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 68ms (Views: 66.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:20:01 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:01 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:01 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:01 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:01 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:01 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:01 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:01 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:01 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:01 -0700
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 16:20:02 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[36mMapSetting Load (0.6ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/admin_map.html.erb within layouts/application (7.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 78ms (Views: 74.4ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:20:11 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"305"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.3ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "map_settings" SET "hashtag" = $1, "updated_at" = $2 WHERE "map_settings"."id" = 207  [["hashtag", "305"], ["updated_at", "2015-09-01 23:20:11.262754"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  Rendered application/admin_map.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 56ms (Views: 47.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:20:11 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:11 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:11 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:11 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:11 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:11 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:20:11 -0700
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:24:00 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"305"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.6ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 37ms
+
+RuntimeError (In order to use respond_with, first you need to declare the formats your controller responds to in the class level.):
+  app/controllers/map_settings_controller.rb:13:in `block in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (75.6ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:24:30 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"305"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.3ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/map_settings/207
+Completed 500 Internal Server Error in 40ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/map_settings_controller.rb:14:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:8:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (65.6ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:24:58 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"305"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.5ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/map_settings/207
+Completed 406 Not Acceptable in 19ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/map_settings_controller.rb:8:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (71.7ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:25:18 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"305"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.2ms)[0m  SELECT  "map_settings".* FROM "map_settings"  WHERE "map_settings"."id" = $1 LIMIT 1  [["id", 207]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/map_settings/207
+Completed 406 Not Acceptable in 18ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (67.6ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:26:28 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"305"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.5ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/map_settings/207
+Completed 406 Not Acceptable in 18ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (67.0ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:26:35 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"305"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.8ms)[0m  SELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  Rendered application/admin_map.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (17.9ms)
+Completed 200 OK in 109ms (Views: 87.9ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:26:35 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:35 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:35 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:35 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:35 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:35 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:35 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:35 -0700
+
+
+Started GET "/map_settings/admin" for 127.0.0.1 at 2015-09-01 16:26:38 -0700
+
+AbstractController::ActionNotFound (The action 'show' could not be found for MapSettingsController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:26:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:45 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:45 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:45 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:45 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:45 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:45 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:45 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:26:45 -0700
+
+
+Started GET "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:26:59 -0700
+
+AbstractController::ActionNotFound (The action 'show' could not be found for MapSettingsController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:27:00 -0700
+
+AbstractController::ActionNotFound (The action 'show' could not be found for MapSettingsController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+
+
+Started GET "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:27:05 -0700
+
+AbstractController::ActionNotFound (The action 'show' could not be found for MapSettingsController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 16:27:08 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[35mMapSetting Load (0.4ms)[0m  SELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered application/admin_map.html.erb within layouts/application (13.1ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (3.4ms)
+Completed 200 OK in 83ms (Views: 65.8ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:27:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:08 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:08 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:08 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:08 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:08 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:08 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:08 -0700
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:27:09 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"305"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.5ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  Rendered application/admin_map.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 65ms (Views: 53.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:27:10 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:10 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:10 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:10 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:10 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:10 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:10 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:10 -0700
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:27:29 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"305"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.4ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 18ms
+
+NameError (undefined local variable or method `root' for #<MapSettingsController:0x007f8444d818a8>):
+  app/controllers/map_settings_controller.rb:13:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (69.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-01 16:27:33 -0700
+Processing by ApplicationController#map as HTML
+  Rendered application/map.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (13.7ms)
+Completed 200 OK in 73ms (Views: 68.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:27:33 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:33 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:33 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:33 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:33 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:33 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:27:33 -0700
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 16:27:35 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[36mMapSetting Load (0.5ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/admin_map.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:27:37 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"305"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (1.2ms)[0m  SELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 500 Internal Server Error in 10ms
+
+NameError (undefined local variable or method `root' for #<MapSettingsController:0x007f8447bc8e28>):
+  app/controllers/map_settings_controller.rb:13:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (71.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 16:28:31 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[36mMapSetting Load (0.8ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/admin_map.html.erb within layouts/application (17.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 153ms (Views: 112.3ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:28:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:28:31 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:28:31 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:28:31 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:28:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:28:31 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:28:31 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:28:31 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:28:31 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:28:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:28:31 -0700
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:28:33 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"305"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.4ms)[0m  SELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template map_settings/application#map, application/application#map with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views"
+):
+  app/controllers/map_settings_controller.rb:13:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (1.3ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:28:39 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"305"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.4ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 17ms
+
+ActionView::MissingTemplate (Missing template /application#map with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views"
+  * "/Users/sophiadengo/Desktop/mdc-instagram-rails"
+  * "/"
+):
+  app/controllers/map_settings_controller.rb:13:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.5ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:28:42 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"305"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (1.4ms)[0m  SELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Completed 500 Internal Server Error in 9ms
+
+ActionView::MissingTemplate (Missing template /application#map with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sophiadengo/Desktop/mdc-instagram-rails/app/views"
+  * "/Users/sophiadengo/Desktop/mdc-instagram-rails"
+  * "/"
+):
+  app/controllers/map_settings_controller.rb:13:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.6ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:29:12 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"305"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.6ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 16ms
+
+NoMethodError (undefined method `empty?' for nil:NilClass):
+  app/controllers/map_settings_controller.rb:12:in `block (2 levels) in update'
+  app/controllers/map_settings_controller.rb:6:in `update'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (72.3ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:29:24 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"305"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[35mMapSetting Load (0.4ms)[0m  SELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-01 16:29:24 -0700
+Processing by ApplicationController#map as HTML
+  Rendered application/map.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (12.6ms)
+Completed 200 OK in 67ms (Views: 62.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:29:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:29:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:29:25 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:29:25 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:29:25 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:29:25 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:29:25 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:29:25 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:29:25 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:29:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:29:25 -0700
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 16:30:22 -0700
+Processing by ApplicationController#admin_map as HTML
+  [1m[35mMapSetting Load (0.5ms)[0m  SELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered application/admin_map.html.erb within layouts/application (17.1ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (3.5ms)
+Completed 200 OK in 145ms (Views: 114.1ms | ActiveRecord: 7.8ms)
+
+
+Started PATCH "/map_settings/207" for 127.0.0.1 at 2015-09-01 16:30:26 -0700
+Processing by MapSettingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JR5JGmorTfTgYSf0zp0qt2tX/6o+A7e4w6dD6l0O6Y4=", "map_setting"=>{"latitude"=>"25.7667", "longitude"=>"-80.2", "hashtag"=>"kitten"}, "submit"=>"Submit Form", "id"=>"207"}
+  [1m[36mMapSetting Load (0.4ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "map_settings" SET "hashtag" = $1, "updated_at" = $2 WHERE "map_settings"."id" = 207[0m  [["hashtag", "kitten"], ["updated_at", "2015-09-01 23:30:26.842119"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-01 16:30:26 -0700
+Processing by ApplicationController#map as HTML
+  Rendered application/map.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 16:30:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 16:30:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 16:30:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 16:30:26 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 16:30:26 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 16:30:26 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 16:30:26 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 16:30:26 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 16:30:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:30:26 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:30:26 -0700
