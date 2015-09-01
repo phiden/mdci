@@ -37,7 +37,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
         format.html do
-        	redirect_to(:users, notice: 'User was successfully created')
+        	redirect_to('admin', notice: 'User was successfully created')
         end
         format.json { render :show, status: :created, location: @user }
       else
@@ -68,7 +68,7 @@ class UsersController < ApplicationController
 	  @user = User.find(params[:id])
     @user.destroy
     respond_to do |format|
-      format.html { redirect_to '/users/new', notice: 'User was successfully destroyed.' }
+      format.html { redirect_to '/admin', notice: 'User was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
