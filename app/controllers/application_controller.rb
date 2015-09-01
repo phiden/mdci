@@ -7,7 +7,8 @@ class ApplicationController < ActionController::Base
  
  	def map
 	  # front page 
-	 
+		@map_settings = MapSetting.first
+		
  	end
  
  	# View of current map settings
@@ -22,6 +23,7 @@ class ApplicationController < ActionController::Base
  	# POST with changes
  	def edit_map
 	  # add render statement
+	  
  	end
 	 	
  	private
