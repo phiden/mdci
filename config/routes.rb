@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 	resources :users
 	resources :admin
 	
+	
+	
 	root 'pages#map'
 
 	get 'login' => 'user_sessions#new', :as => :login
