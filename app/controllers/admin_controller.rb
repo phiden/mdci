@@ -1,8 +1,9 @@
-class AdminController < UsersController
+class AdminController < ApplicationController
 
-	def admin
+	def index
 		
-		flash.now[:alert] = 'controller loaded',  @users
+		@users = User.all
+		flash.now[:alert] = 'controller loaded',  @users, @user
 		
 	end
 	
