@@ -2,6 +2,7 @@ class PagesController < ApplicationController
 	
 	def admin
 		# Admin page goes here, in the future
+		
 	end
 	
 	def map
