@@ -12436,3 +12436,132 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 11:25:51 -0700
 
 
 Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 11:25:51 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-01 11:27:40 -0700
+Processing by PagesController#map as HTML
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO "map_settings" ("created_at", "hashtag", "latitude", "longitude", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-09-01 18:27:40.854362"], ["hashtag", "305"], ["latitude", "25.7667"], ["longitude", "-80.2"], ["updated_at", "2015-09-01 18:27:40.854362"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  Rendered pages/map.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 71ms (Views: 54.0ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-01 11:27:41 -0700
+Processing by PagesController#map as HTML
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "map_settings" ("created_at", "hashtag", "latitude", "longitude", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-09-01 18:27:41.754230"], ["hashtag", "305"], ["latitude", "25.7667"], ["longitude", "-80.2"], ["updated_at", "2015-09-01 18:27:41.754230"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered pages/map.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 68ms (Views: 64.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 11:27:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 11:27:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 11:27:41 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 11:27:41 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 11:27:41 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 11:27:41 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 11:27:41 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 11:27:41 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 11:27:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 11:27:41 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-01 11:28:10 -0700
+Processing by PagesController#map as HTML
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "map_settings" ("created_at", "hashtag", "latitude", "longitude", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-09-01 18:28:10.193194"], ["hashtag", "305"], ["latitude", "25.7667"], ["longitude", "-80.2"], ["updated_at", "2015-09-01 18:28:10.193194"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered pages/map.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (11.3ms)
+Completed 500 Internal Server Error in 106ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"admin"} missing required keys: [:id]):
+    10:     <% if current_user %>
+    11:       <%= link_to "Edit Profile", edit_user_path(current_user.id) %>
+    12:       <%= link_to "Logout", :logout, method: :post %>
+    13:       <%= link_to "Admin Panel", :admin %>
+    14:     <% else %>
+    15:       <%= link_to "Register", new_user_path %> |
+    16:       <%= link_to "Login", :login %>
+  app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb___2916941303620837202_70278270085380'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb___1925296805995736301_70278270843500'
+
+
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/sophiadengo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-01 11:28:25 -0700
+Processing by PagesController#map as HTML
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "map_settings" ("created_at", "hashtag", "latitude", "longitude", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-09-01 18:28:25.386576"], ["hashtag", "305"], ["latitude", "25.7667"], ["longitude", "-80.2"], ["updated_at", "2015-09-01 18:28:25.386576"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered pages/map.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (3.2ms)
+Completed 200 OK in 82ms (Views: 75.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 11:28:25 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 11:28:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 11:28:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 11:28:25 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 11:28:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 11:28:25 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 11:28:25 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 11:28:25 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 11:28:25 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 11:28:25 -0700
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-09-01 11:28:27 -0700
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (23.8ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 88ms (Views: 84.5ms | ActiveRecord: 1.2ms)
