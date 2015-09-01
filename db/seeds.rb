@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+map = MapSetting.create([{hashtag: 'puppy', latitude: 25.7667, longitude: -80.2000}])
+admin = User.create([{email: 'admin@admin.com', password: 'changeme', password_confirmation: 'changeme'}])

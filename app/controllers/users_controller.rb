@@ -6,6 +6,8 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    @map_settings = MapSettings
+    
   end
 
   # GET /users/1
@@ -13,7 +15,7 @@ class UsersController < ApplicationController
   def show
 	  @users = User.all
 	  @user = User.find(params[:id])
-  end
+	end
 
   # GET /users/new
   def new

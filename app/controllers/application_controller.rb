@@ -4,7 +4,26 @@ class ApplicationController < ActionController::Base
   
   protect_from_forgery with: :exception
  	#before_filter :require_login
- 	
+ 
+ 	def map
+	  # front page 
+	 
+ 	end
+ 
+ 	# View of current map settings
+ 	def admin_map
+	  # add render statement
+	  
+	   @users = User.all
+	   @map_settings = MapSetting.first
+	
+	end
+ 
+ 	# POST with changes
+ 	def edit_map
+	  # add render statement
+ 	end
+	 	
  	private
  	
 	def not_authenticated
