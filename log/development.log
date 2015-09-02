@@ -23228,3 +23228,185 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 16:52:55 -0700
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 16:52:55 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-01 16:56:28 -0700
+Processing by ApplicationController#map as HTML
+  [1m[36mMapSetting Load (1.8ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  Rendered application/map.html.erb within layouts/application (7.8ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (7.6ms)
+Completed 200 OK in 134ms (Views: 110.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-01 17:00:28 -0700
+Processing by ApplicationController#map as HTML
+  [1m[36mMapSetting Load (1.6ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  Rendered application/map.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered layouts/_header.html.erb (9.5ms)
+Completed 200 OK in 164ms (Views: 142.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:28 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 17:00:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:28 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:28 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:28 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:28 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:28 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:28 -0700
+
+
+Started POST "/logout" for 127.0.0.1 at 2015-09-01 17:00:30 -0700
+Processing by UserSessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qsmmxGqvp/+UDZ8BuMK3o406z5ltQy526rE3nQtpeuU="}
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-01 17:00:30 -0700
+Processing by ApplicationController#map as HTML
+  [1m[35mMapSetting Load (0.5ms)[0m  SELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1
+  Rendered application/map.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 60ms (Views: 57.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 17:00:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:30 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:30 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:30 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:30 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:30 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:30 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:30 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-01 17:00:32 -0700
+Processing by ApplicationController#map as HTML
+  [1m[36mMapSetting Load (0.6ms)[0m  [1mSELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1[0m
+  Rendered application/map.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 56ms (Views: 54.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 17:00:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:32 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:32 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:32 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:32 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:32 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:32 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:32 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-01 17:00:50 -0700
+Processing by ApplicationController#map as HTML
+  [1m[35mMapSetting Load (0.5ms)[0m  SELECT  "map_settings".* FROM "map_settings"   ORDER BY "map_settings"."id" ASC LIMIT 1
+  Rendered application/map.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-01 17:00:50 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:50 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:50 -0700
+
+
+Started GET "/assets/map_settings.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:50 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:50 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:50 -0700
+
+
+Started GET "/assets/leaflet.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:50 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:50 -0700
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:50 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:50 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-01 17:00:50 -0700
