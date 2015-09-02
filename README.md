@@ -10,6 +10,10 @@
 * Instagram API access: [Get yours.](http://instagram.com/developers)
 * Sorcery for user managemet: [Sorcery](https://github.com/NoamB/sorcery)
 
+## Installation
+
+I'll flesh this out, but as far as Sorcery goes, I used [this tutorial](https://github.com/NoamB/sorcery/wiki/Simple-Password-Authentication).
+
 ## Why?
 
 Litterati collects images from Instagram tagged with #litterati and displays them in a grid. This collects images from Instagram tagged with a hashtag defined in the Admin panel, and displays it on a map with the center defined by the Admin. The idea is to collect visual data associated with a given hashtag in a given geolocation. In Miami, use cases include king tides, flooding, and other rising-sea-level problems. 
