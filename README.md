@@ -8,6 +8,7 @@
 * Ruby on Rails. Get started with installation [here.](http://installrails.com/)
 * Leaflet.js: [Get your keys.](http://leafletjs.com)
 * Instagram API access: [Get yours.](http://instagram.com/developers)
+* Sorcery for user managemet: [Sorcery](https://github.com/NoamB/sorcery)
 
 ## Installation
 
